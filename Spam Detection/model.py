@@ -9,7 +9,7 @@ class Model:
 		self.data_size, self.vocab_size = self.processor.build_vocab()
 		self.X = self.processor.prepare_X()
 		self.Y = self.processor.encoding_label()
-		self.W = np.zeros((self.vocab_size, 1), dtype=np.float32)
+		self.W = np.random.randn((self.vocab_size, 1), dtype=np.float32)
 		self.b = np.zeros((1,))
 		self.lr = 0.05
 		self.epsilon = 1e-8
