@@ -20,7 +20,7 @@ The project includes:
 ## Installation
 
 ```bash
-pip install numpy
+pip install numpy scipy pandas Pillow
 ```
 
 Place `mnist_train.csv` and `mnist_test.csv` in the project folder, then run:
